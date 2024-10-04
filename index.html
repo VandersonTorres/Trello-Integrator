@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TRELLO INTEGRATOR</title>
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<section>
+			<article class="container">
+				<header><h1>Delta Victor - Trello Integrator</h1></header>
+				<h3 class="main_title">Fill the Form:</h3>
+				<form method="POST" action="#">
+					<fieldset>
+						<legend><b>General Information</b></legend><br/>
+						<label for="client_name" class="data_type"> User:* </label><br/>
+						<input type="text" name="client_name" class="input" minlenght="3" required/><br/><br/>
+
+                        <label for="client_name" class="data_type"> Title:* </label><br/>
+						<input type="text" name="client_name" class="input" minlenght="3" required/><br/><br/>
+
+                        <label for="client_name" class="data_type"> Description:* </label><br/>
+						<input type="text" name="client_name" class="input" minlenght="3" required/><br/><br/>
+						
+						<label for="project_type" class="data_type"> Type of Ticket:*</label><br/>
+						<select name="project_type" class="input" required>
+							<option value="">Select</option>
+							<option value="casa">Low Priority</option>
+							<option value="apartamento">High Priority</option>
+							<option value="estabelecimento comercial">Training</option>
+							<option value="outros">Side Projects <i>(personal)</i></option>
+						</select><br/><br/>
+					</fieldset><br/>
+
+					<fieldset>
+						<legend><b>Finish</b></legend><br/>
+						<button type="submit">Send</button><br/><br/>
+						<button type="reset">Clear</button>
+					</fieldset>
+				</form>
+			</article>
+		</section>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
