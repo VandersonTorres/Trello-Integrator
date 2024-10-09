@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>TRELLO INTEGRATOR</title>
-		<style type="text/css">
+        <link rel="stylesheet" href="./assets/css/style.css">
 		</style>
 	</head>
 
@@ -17,23 +17,35 @@
 				<form method="POST" action="#">
 					<fieldset>
 						<legend><b>General Information</b></legend><br/>
-						<label for="client_name" class="data_type"> User:* </label><br/>
-						<input type="text" name="client_name" class="input" minlenght="3" required/><br/><br/>
-
-                        <label for="client_name" class="data_type"> Title:* </label><br/>
-						<input type="text" name="client_name" class="input" minlenght="3" required/><br/><br/>
-
-                        <label for="client_name" class="data_type"> Description:* </label><br/>
-						<input type="text" name="client_name" class="input" minlenght="3" required/><br/><br/>
-						
-						<label for="project_type" class="data_type"> Type of Ticket:*</label><br/>
-						<select name="project_type" class="input" required>
-							<option value="">Select</option>
-							<option value="casa">Low Priority</option>
-							<option value="apartamento">High Priority</option>
-							<option value="estabelecimento comercial">Training</option>
-							<option value="outros">Side Projects <i>(personal)</i></option>
+						<label for="user" class="data_type"> User:* </label>
+						<select name="user" class="input" required>
+							<option value="">Select a User</option>
+							<option value="Renato">Renato</option>
+							<option value="Vanderson">Vanderson</option>
 						</select><br/><br/>
+
+						<label for="project" class="data_type"> Project:* </label>
+						<select name="project" class="input" required>
+							<option value="">Select a Project</option>
+							<option value="Mintel">Mintel</option>
+							<option value="Veritec">Veritec</option>
+							<option value="Shutterfly">Shutterfly</option>
+							<option value="LexisNexis">LexisNexis</option>
+							<option value="Catalog-Discovery">Catalog-Discovery</option>
+							<option value="Catalog-Extraction">Catalog-Extraction</option>
+						</select><br/><br/>
+
+                        <label for="title" class="data_type"> Title:* </label>
+						<input type="text" name="title" class="input" minlenght="3" required/><br/><br/>
+
+                        <label for="description" class="data_type"> Description:* </label>
+						<textarea name="description" class="input" rows="5" cols="50" required></textarea><br/><br/>
+						
+						<label for="tag" class="data_type"> Tag:*</label>
+						<input type="checkbox" name="training" value="training"> Training<br/>
+						<input type="checkbox" name="low_priority" value="low_priority"> Low Priority<br/>
+						<input type="checkbox" name="high_priority" value="high_priority"> High Priority<br/>
+						<input type="checkbox" name="side_projects" value="side_projects"> Side Projects <i>(personal)</i><br/><br/>
 					</fieldset><br/>
 
 					<fieldset>
